@@ -10,6 +10,10 @@
 				<div class="item-top">
 					<div class="items">
 						<div
+							class="item-date"
+							v-text="item.frontMatter.date"
+						></div>
+						<div
 							class="item-title"
 							v-text="item.frontMatter.title"
 						></div>
@@ -17,10 +21,6 @@
 					<div
 						class="item-tag"
 						v-text="item.frontMatter.description"
-					></div>
-					<div
-						class="item-date"
-						v-text="item.frontMatter.date"
 					></div>
 				</div>
 				<!-- <img
