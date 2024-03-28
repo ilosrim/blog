@@ -1,4 +1,5 @@
 ---
+aside: false
 title: How to build modern docs with vitepress
 author: Mirsoli Mirsultonov
 date: 2022-01-05
@@ -122,8 +123,8 @@ To test this config file, you can start by changing the meta title and descripti
 ```js
 // .vitepress/config.js
 export default {
-  title: "Adocs",
-  description: "An awesome docs template built by me",
+	title: "Adocs",
+	description: "An awesome docs template built by me",
 };
 ```
 
@@ -138,10 +139,10 @@ In other to change the logo title and add an image, copy the markup below and pa
 ```js
 // config.js
 export default {
-  themeConfig: {
-    logo: "/logo.svg",
-    siteTitle: "Adocs",
-  },
+	themeConfig: {
+		logo: "/logo.svg",
+		siteTitle: "Adocs",
+	},
 };
 ```
 
@@ -208,9 +209,9 @@ Navigation menus usually have social icons visitors can use to visit your social
 ```js
 // .vitepress/config.js
 socialLinks: [
-  { icon: "github", link: "https://github.com/Evavic44/adocs" },
-  { icon: "twitter", link: "https://twitter.com/victorekea" },
-  { icon: "discord", link: "", target: "_blank" },
+	{ icon: "github", link: "https://github.com/Evavic44/adocs" },
+	{ icon: "twitter", link: "https://twitter.com/victorekea" },
+	{ icon: "discord", link: "", target: "_blank" },
 ];
 ```
 
@@ -465,13 +466,13 @@ Here's an example of my custom colors
 /* .vitepress/theme/custom.css */
 
 :root {
-  --vp-c-brand: rgb(255, 115, 64);
-  --vp-c-brand-light: rgb(255, 87, 25);
-  --vp-c-brand-lighter: rgb(255, 115, 64);
-  --vp-c-brand-dark: #ff622d;
-  --vp-c-brand-darker: rgb(226, 60, 0);
+	--vp-c-brand: rgb(255, 115, 64);
+	--vp-c-brand-light: rgb(255, 87, 25);
+	--vp-c-brand-lighter: rgb(255, 115, 64);
+	--vp-c-brand-dark: #ff622d;
+	--vp-c-brand-darker: rgb(226, 60, 0);
 
-  --vp-c-sponsor: #fd1d7c;
+	--vp-c-sponsor: #fd1d7c;
 }
 ```
 
@@ -488,23 +489,23 @@ Aside from the color themes, you can also override other things like, font famil
 @import url(https://fonts.googleapis.com/css?family=Space+Grotesk:regular,italic,700,700italic);
 
 :root {
-  --vp-c-brand: #ff7340;
-  --vp-c-brand-light: #ff5719;
-  --vp-c-brand-lighter: #ff7340;
-  --vp-c-brand-lighter: rgba(255, 135, 23, 0.25);
-  --vp-c-brand-dark: #ff622d;
-  --vp-c-brand-darker: #e23c00;
+	--vp-c-brand: #ff7340;
+	--vp-c-brand-light: #ff5719;
+	--vp-c-brand-lighter: #ff7340;
+	--vp-c-brand-lighter: rgba(255, 135, 23, 0.25);
+	--vp-c-brand-dark: #ff622d;
+	--vp-c-brand-darker: #e23c00;
 
-  --vp-c-sponsor: #fd1d7c;
+	--vp-c-sponsor: #fd1d7c;
 
-  /* Typography */
-  --vp-font-family-base: "Space Grotesk", "Inter var experimental", "Inter var",
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	/* Typography */
+	--vp-font-family-base: "Space Grotesk", "Inter var experimental", "Inter var",
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
-  /* Code Snippet font */
-  --vp-font-family-mono: "Space Mono", Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	/* Code Snippet font */
+	--vp-font-family-mono: "Space Mono", Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 ```
 

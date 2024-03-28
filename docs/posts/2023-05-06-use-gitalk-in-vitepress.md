@@ -1,4 +1,5 @@
 ---
+aside: false
 title: Use Gitalk in Vitepress
 author: Mirsoli Mirsultonov
 date: 2023-05-06
@@ -16,13 +17,17 @@ tags:
 
 {{ $frontmatter.description }}
 
+_[{{ $frontmatter.author }}](mailto:mirjr17@outlook.com)_ | {{ $frontmatter.subDate}}
+
 ## 1. [Register a new OAuth application](https://github.com/settings/applications/new)
+
 - Aplication name: xxx
 - Home Page URL: your website address, like `https://biodasturchi.uz`
 - Authorization callback URL: your website address, like `https://biodasturchi.uz`
 - Remember Your `Client ID` and `Client secrets`
 
 ## 2. Copy and paste:
+
 ```javascript
 <template>
   <div id="gitalk-container"></div>
@@ -51,4 +56,3 @@ onMounted(() => {
 </script>
 <style scoped></style>
 ```
-

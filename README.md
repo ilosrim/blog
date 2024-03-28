@@ -19,7 +19,7 @@
 Use this command below to boot this project locally.
 
 ```bash
-git clone https://github.com/biodasturchi/docs.git
+git clone https://github.com/ilosrim/blog.git
 
 cd docs
 
