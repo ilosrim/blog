@@ -3,8 +3,8 @@ import { SearchPlugin } from "vitepress-plugin-search";
 
 async function config() {
 	return {
-		title: "Biodasturchi",
-		description: "Biodasturchi web page",
+		title: "ilosrim",
+		description: "ilosrim web page",
 		base: "/",
 		head: head(),
 		lang: "en-US",
@@ -17,18 +17,18 @@ async function config() {
 			// logo: "/logo.svg",
 			siteTitle: "ilosrim",
 			outlineTitle: "Outline title",
-			repo: "biodasturchi/docs",
+			repo: "ilosrim/blog",
 			nav: nav(),
 			// sidebar: {
 			// 	"/posts/": sidebarArticles(),
 			// },
 			lastUpdatedText: "Last updated",
 			socialLinks: [
-				{ icon: "github", link: "https://github.com/mirjr" },
-				{ icon: "twitter", link: "https://twitter.com/mirjr17" },
+				{ icon: "github", link: "https://github.com/ilosrim" },
+				{ icon: "twitter", link: "https://twitter.com/ilosrim" },
 			],
 			editLink: {
-				pattern: "https://github.com/biodasturchi/docs/blob/main/docs/:path",
+				pattern: "https://github.com/ilosrim/blog/blob/main/docs/:path",
 				text: "Edit this page on GitHub",
 			},
 			docFooter: {
@@ -37,7 +37,7 @@ async function config() {
 			},
 			footer: {
 				message: "Released under the MIT License.",
-				copyright: `Copyright © 2022-${new Date().getFullYear()} Biodasturchi`,
+				copyright: `Copyright © 2022-${new Date().getFullYear()} ilosrim`,
 			},
 		},
 		vite: {
@@ -77,7 +77,7 @@ function head() {
 				content: "upgrade-insecure-requests",
 			},
 		],
-		["meta", { name: "author", content: "biodasturchi.uz" }],
+		["meta", { name: "author", content: "ilosrim.uz" }],
 		["meta", { property: "og:title", content: "Home" }],
 	];
 }
