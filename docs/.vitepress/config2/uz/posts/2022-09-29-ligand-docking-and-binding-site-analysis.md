@@ -1,6 +1,6 @@
 ---
 title: Ligand docking and binding site analysis with pymol and autodock/vina
-author: Mirsoli Mirsultonov
+author: ilosrim
 date: 2022-09-29
 subDate: 2022/09/29
 image: https://raw.githubusercontent.com/biodasturchi/imgs/master/bio/2022-11-29/pymol2.png
@@ -17,7 +17,7 @@ tags:
 
 {{ $frontmatter.description }}
 
-_[[{{ $frontmatter.author }}]](mailto:mirjr17@outlook.com)_ | {{ $frontmatter.subDate}}
+_[[{{ $frontmatter.author }}]](mailto:ilosrim@outlook.com)_ | {{ $frontmatter.subDate}}
 
 ![banner](https://raw.githubusercontent.com/biodasturchi/imgs/master/bio/2022-11-29/pymol2.png)
 

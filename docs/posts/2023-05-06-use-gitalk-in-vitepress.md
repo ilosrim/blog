@@ -1,7 +1,7 @@
 ---
 aside: false
 title: Use Gitalk in Vitepress
-author: Mirsoli Mirsultonov
+author: ilosrim
 date: 2023-05-06
 subDate: 2023/05/06
 image: https://user-images.githubusercontent.com/62628408/201538130-a1008969-06ae-4aad-9ea0-b77384d6bac1.png
@@ -17,7 +17,7 @@ tags:
 
 {{ $frontmatter.description }}
 
-_[{{ $frontmatter.author }}](mailto:mirjr17@outlook.com)_ | {{ $frontmatter.subDate}}
+_[{{ $frontmatter.author }}](mailto:ilosrim@outlook.com)_ | {{ $frontmatter.subDate}}
 
 ## 1. [Register a new OAuth application](https://github.com/settings/applications/new)
 

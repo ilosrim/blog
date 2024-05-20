@@ -1,6 +1,6 @@
 ---
 title: Gromacs'ni docking va dastlabki model sistemani qurish
-author: Mirsoli Mirsultonov
+author: ilosrim
 date: 2023-04-24
 subDate: 2023/04/24
 image: https://raw.githubusercontent.com/biodasturchi/imgs/master/bio/2023-04-24/gromacs.png
@@ -17,7 +17,7 @@ tags:
 
 {{ $frontmatter.description }}
 
-_[{{ $frontmatter.author }}](mailto:mirjr17@outlook.com)_ | {{ $frontmatter.subDate}}
+_[{{ $frontmatter.author }}](mailto:ilosrim@outlook.com)_ | {{ $frontmatter.subDate}}
 
 [![banner](https://raw.githubusercontent.com/biodasturchi/imgs/master/bio/2023-04-24/gromacs.png)](https://manual.gromacs.org/current/index.html)
 
@@ -53,14 +53,16 @@ GROMACS - bu to'g'ri nom. Bu hech narsaning qisqartmasi emas.
 
 ## GROMACS'ni GPU'siz docking
 
-Grmocas faqat  `Linux` va `MacOS` operatsion sistemalarida ishlaydi. Ushbu maqolada GROMACS'ni dockingni linux distributivi bo'lmish `Ubuntu`ning `22.04` versiyasidan foydalanamiz.
+Grmocas faqat `Linux` va `MacOS` operatsion sistemalarida ishlaydi. Ushbu maqolada GROMACS'ni dockingni linux distributivi bo'lmish `Ubuntu`ning `22.04` versiyasidan foydalanamiz.
 
 1. Avval paketlarni yangilab olamiz
+
 ```bash
 sudo apt update && sudo apt upgrade
 ```
 
 2. Endi GROMACS'ni o'rnatamiz
+
 ```bash
 sudo apt install gromacs
 ```
@@ -72,10 +74,11 @@ sudo apt install gromacs
 1. Avval ushbu saytdan bizga kerak bo'lgan GMX dasturini yuklab olamiz: https://manual.gromacs.org/current/download.html
 
 2. Endi kompyuterimiz sistemasiga mos `CUDA TOOLKIT`ni yuklab olamiz: https://developer.nvidia.com/cuda-downloads
-  
-    Saytda ko'rsatilgan ko'dlarni nusxalab terminalingizga tashlang va ishlating
+
+   Saytda ko'rsatilgan ko'dlarni nusxalab terminalingizga tashlang va ishlating
 
 3. Endi Gromacs kompilyatsiya jarayoni boshlaymiz, quyidagi kodlarni birma-bir nusxalab terminalingizda ishlating:
+
 ```bash
 tar xfz gromacs-2020.2.tar.gz
 cd gromacs-2020.2
@@ -89,11 +92,13 @@ sudo make install
 # Ushbu kodni nusxalab .bashrc yoki .bashrc_profile fayliga tashlab qo'ying:
 source /usr/local/gromacs/bin/GMXRC
 ```
+
 > Ushbu usulda docking kompyuterning kuchiga qarab 1 soatdan ko'proq vaqt olishi mumkin
 
-
 ## `pdb2gmx` modulini ishlatish
+
 `pdb2gmx` ning maqsadi uchta faylni yaratishdir:
+
 1. Molekula uchun topologiya
 2. Joylashuvni cheklash (position restraint) fayli.
 3. Qayta ishlangan (post-processed) struktura fayli.
@@ -129,6 +134,7 @@ gmx pdb2gmx -f spc216.gro
 ```bash
 gmx solvate -cs conf.gro -o out_conf.gro -box 2.5 -p topol.top
 ```
+
 > `topol.top` faylini text editorda ochib, eng pastdagi `HOH` qatorini o'chirib, `SOL` qatorini 510 ga tenglashtirib qo'ying
 
 ## Suv energiyasini minimallashtirish uchin `min.mdp` dan foydalanamiz. Ushbu faylni [bu yerdan](https://raw.githubusercontent.com/biodasturchi/docs/main/docs/sources/files/gmx/files/min.mdp) ko'chirib olishingiz mumkin.
@@ -142,7 +148,7 @@ gmx mdrun -deffnm min -v
 
 ```bash
 gmx grompp -v -f pr.mdp -c min.gro -p topol.top -o pr -maxwarn 2
-gmx mdrun -v -deffnm pr   
+gmx mdrun -v -deffnm pr
 ```
 
 ## NVT, ushbu faylni fayli [bu yerdan](https://raw.githubusercontent.com/biodasturchi/docs/main/docs/sources/files/gmx/files/nvt.mdp) ko'chirib olishingiz mumkin.
@@ -155,7 +161,7 @@ gmx mdrun -v -deffnm nvt
 ## NPT, ushbu faylni fayli [bu yerdan](https://raw.githubusercontent.com/biodasturchi/docs/main/docs/sources/files/gmx/files/npt.mdp) ko'chirib olishingiz mumkin.
 
 ```bash
-gmx grompp  -f npt.mdp -c nvt.gro -p topol.top -o npt -maxwarn 2 
+gmx grompp  -f npt.mdp -c nvt.gro -p topol.top -o npt -maxwarn 2
 gmx mdrun -deffnm npt
 ```
 

@@ -164,6 +164,7 @@
 	.item-container a {
 		display: flex;
 		justify-content: space-between;
+		padding-bottom: 0.5rem;
 	}
 	/* .item-container a:hover .item-tag, */
 	/* .item-container a:hover .item-date  */

@@ -99,6 +99,10 @@ function sidebarArticles() {
 			collapsed: true,
 			items: [
 				{
+					text: "- Internal server error SQLSTATE[22001]",
+					link: "/posts/2024-05-20-internal-server-error.md",
+				},
+				{
 					text: "- Use Gitalk in Vitepress",
 					link: "/posts/2023-05-06-use-gitalk-in-vitepress",
 				},

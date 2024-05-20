@@ -12,7 +12,7 @@
 		"vitepress",
 		"blog"
 	],
-	"author": "mirjr <mirjr17@outlook.com>",
+	"author": "ilosrim <ilosrim@outlook.com>",
 	"license": "MIT",
 	"devDependencies": {
 		"@arco-design/web-vue": "^2.45.3",

@@ -1,6 +1,6 @@
 ---
 title: Creating markdown blog with next js
-author: Mirsoli Mirsultonov
+author: ilosrim
 date: 2022-03-07
 subDate: 2022/03/07
 image: https://raw.githubusercontent.com/ilosrim/imgs/master/dev//nextjs-markdown2.png
@@ -16,7 +16,7 @@ tags:
 
 {{ $frontmatter.description }}
 
-_[{{ $frontmatter.author }}](mailto:mirjr17@outlook.com)_ | {{ $frontmatter.subDate}}
+_[{{ $frontmatter.author }}](mailto:ilosrim@outlook.com)_ | {{ $frontmatter.subDate}}
 
 ![banner](https://raw.githubusercontent.com/ilosrim/imgs/master/dev//nextjs-markdown2.png)
 
