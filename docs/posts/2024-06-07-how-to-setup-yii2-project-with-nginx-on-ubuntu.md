@@ -3,7 +3,7 @@ aside: false
 title: How to Setup Yii2 Project with Nginx on Ubuntu
 author: ilosrim
 date: 2024-06-07
-subDate: 2024/05/20
+subDate: 2024/06/07
 image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*My3hUakn4-UaswsPEJTUHg.jpeg
 description: ""
 category: Dev
