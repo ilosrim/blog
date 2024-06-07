@@ -99,6 +99,10 @@ function sidebarArticles() {
 			collapsed: true,
 			items: [
 				{
+					text: "- How to Setup Yii2 Project with Nginx on Ubuntu",
+					link: "/posts/2024-06-07-how-to-setup-yii2-project-with-nginx-on-ubuntu.md",
+				},
+				{
 					text: "- Internal server error SQLSTATE[22001]",
 					link: "/posts/2024-05-20-internal-server-error.md",
 				},
