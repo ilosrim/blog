@@ -86,7 +86,7 @@ function nav() {
 	return [
 		{ text: "Archive", link: "/pages/archive" },
 		{ text: "Tag", link: "/pages/tags" },
-		{ text: "Category", link: "/pages/category" },
+		// { text: "Category", link: "/pages/category" },
 		{ text: "Contact", link: "/pages/contact" },
 	];
 }
