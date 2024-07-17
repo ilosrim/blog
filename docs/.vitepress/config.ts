@@ -99,6 +99,10 @@ function sidebarArticles() {
 			collapsed: true,
 			items: [
 				{
+					text: "- Containerization of Laravel PHP8.3-fpm, MySQL, Nginx in Docker",
+					link: "/posts/2024-07-17-containerization-of-laravel.md",
+				},
+				{
 					text: "- How to Setup Yii2 Project with Nginx on Ubuntu",
 					link: "/posts/2024-06-07-how-to-setup-yii2-project-with-nginx-on-ubuntu.md",
 				},
