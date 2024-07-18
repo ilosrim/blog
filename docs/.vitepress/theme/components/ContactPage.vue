@@ -23,10 +23,10 @@
 		</div>
 
 		<div class="links">
-			<font-awesome-icon icon="fa-brands fa-twitter" />
-			<span>Twitter</span>
+			<font-awesome-icon icon="fa-brands fa-telegram" />
+			<span>Telegram</span>
 			<a
-				href="https://twitter.com/ilosrim"
+				href="https://t.me/ilosrim"
 				target="_blank"
 				rel="noopener noreferrer"
 				>@ilosrim</a
