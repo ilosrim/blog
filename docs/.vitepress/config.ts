@@ -98,6 +98,10 @@ function sidebarArticles() {
 			collapsible: true,
 			collapsed: true,
 			items: [
+                {
+                    text: "- Nvim + LazyVim Laravel Development Environment",
+                    link: "/posts/2024-09-01-nvim-lazyvim-laravel-development-environment.md",
+                },
 				{
 					text: "- Containerization of Laravel PHP8.3-fpm, MySQL, Nginx in Docker",
 					link: "/posts/2024-07-17-containerization-of-laravel.md",
